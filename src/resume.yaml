@@ -1,0 +1,50 @@
+pretty: true
+
+name: Roman Piták
+phone: +420 776 592 138
+email: roman@pitak.net
+
+work:
+    -
+        employer: Kindred group
+        when: 02/2012 – present
+        positions:
+            -
+                position: Senior developer
+                description: |
+                    Literate CoffeeScript, AWS...
+            -
+                position: PHP Programmer / System analyst
+                description: |
+                    I analyzed, designed and developed the back end of web applications. Although they were mostly based on the Nette
+                    framework with MySQL, I also developed an e-shop in Magneto and collaborated on projects in Symfony 2 with the
+                    Kunstmaan CMS.
+
+                    I regularly directly communicated with clients on projects specifics during the analysis phases.
+
+                    I designed and executed the migration process and cleanup of over 2000 emails to a new email marketing provider.
+
+                    While coding HTML newsletter emails, I created a “meta language” in PHP based on an HTML object model that
+                    allowed me to effortlessly create content and locale variations of the emails. That, paired with the dotMailer API
+                    client library I wrote, cut the estimated email deployment times by 80%.
+    -
+        employer: Accenture Services
+        when: 03/2011 – 01/2012
+        position: Application Operation Specialist
+        description: |
+            I was responsible for running and maintaining an e-Billing application spread over multiple servers. The application
+            core was an Oracle database running on an HP-UX machine. Data (PDF, XML) preprocessing and loading was
+            controlled by about four hundred shell scripts and binaries. Final data population was provided by 16 MS Win 2005
+            servers with ASP. My duties included: shell script editing and development, log analysis (UNIX, DB), installation of
+            patches and releases (UNIX, WIN), performance tuning (UNIX) and administration of 9 MS Win 2005 servers with
+            ASP.
+
+            I also volunteered and created a web application providing incident tracking for our project. This application is
+            based on PHP 5.3 with the Nette framework, MySQL and jQuery.
+    -
+        employer: Hewlett Packard
+        when: 12/2009 - 08/2010
+        position: 1st line UNIX and database remote technical support
+        description: |
+            I was responsible for identification, undertaking and solving problems in my range of competence and for remote
+            technical support of operating systems and applications.

@@ -1,0 +1,28 @@
+mixin position(job)
+    section
+        header: h3=job.position
+        p= job.description
+        
+mixin positions(job)
+    if job.positions
+        for position in job.positions
+            +position(position)
+    else
+        +position(job)
+
+doctype html
+html(lang="en")
+    head
+        meta( http-equiv='content-type', content='text/html', charset='UTF-8')
+        title= name
+    body
+        .container
+            h1= name
+            div= phone
+            div: a(href="mailto:#{email}")= email
+            each job in work
+                article.job
+                    header
+                        h3= job.employer
+                        div= job.when
+                    +positions(job)
