@@ -1,0 +1,9 @@
+{
+    "name": "cv",
+    "author": "Roman Piták",
+    "devDependencies": {
+        "jade": "1.9.2",
+        "js-yaml": "3.2.7"
+    },
+    "private": true
+}
