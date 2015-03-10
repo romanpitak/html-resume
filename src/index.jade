@@ -1,13 +1,9 @@
+extends ./layout.jade
+
 include ./mixins/jobs.jade
 
-doctype html
-html(lang="en")
-    head
-        meta( http-equiv='content-type', content='text/html', charset='UTF-8')
-        title= name
-    body
-        .container
-            h1= name
-            div= phone
-            div: a(href="mailto:#{email}")= email
-            +jobs(work)
+block content
+    h1= name
+    div= phone
+    div: a(href="mailto:#{email}")= email
+    +jobs(work)

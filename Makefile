@@ -3,6 +3,7 @@ srcdir = src
 
 data = $(srcdir)/resume.yaml
 semantics = $(srcdir)/index.jade
+layout = $(srcdir)/layout.jade
 mixins = $(srcdir)/mixins/*
 renderer = bin/render-html.litcoffee
 
@@ -14,5 +15,5 @@ node_modules: package.json
 	npm install
 	@touch node_modules
 
-index.html: $(semantics) $(data) $(mixins) $(renderer)
+index.html: $(semantics) $(data) $(mixins) $(layout) $(renderer)
 	coffee $(renderer) -- $(semantics) $(data) $@
