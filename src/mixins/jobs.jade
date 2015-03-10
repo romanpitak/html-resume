@@ -2,7 +2,7 @@
 //- One position
 mixin position(job)
     section
-        header: h3=job.position
+        header: h3.position=job.position
         != markdown(job.description)
 
 //- Multiple positions for one job
@@ -18,6 +18,6 @@ mixin jobs(jobs)
     each job in jobs
         article.job
             header
-                h3= job.employer
-                div= job.when
+                h4.timeframe= job.when
+                h4.employer= job.employer
             +positions(job)

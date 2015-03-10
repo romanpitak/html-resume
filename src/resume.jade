@@ -4,8 +4,9 @@ include ./mixins/jobs.jade
 
 block content
     h1= name
-    div= phone
-    div: a(href="mailto:#{email}")= email
+    div.phone= phone
+    div.email: a(href="mailto:#{email}")= email
+    h2 Work experience
     +jobs(work)
     h2 Interests
     != markdown(interests)
