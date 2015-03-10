@@ -1,0 +1,10 @@
+{
+  "name": "cv",
+  "homepage": "https://github.com/romanpitak/cv",
+  "authors": [
+    "Roman Piták <roman@pitak.net>"
+  ],
+  "private": true,
+  "dependencies": {
+  }
+}

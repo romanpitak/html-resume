@@ -10,14 +10,18 @@ renderer = bin/render-html.litcoffee
 
 .PHONY: all
 
-all: node_modules index.html
+all: node_modules bower_components index.html
 
 node_modules: package.json
 	npm install
-	@touch node_modules
+	@touch $@
+
+bower_components: bower.json
+	bower install
+	@touch $@
 
 index.html: $(semantics) $(data) $(mixins) $(layout) main.css $(renderer)
 	coffee $(renderer) -- $(semantics) $(data) $@
 
 main.css: $(style)
-	sass < $< > $@
+	sass $< > $@
