@@ -8,7 +8,7 @@ style = $(srcdir)/resume.sass
 mixins = $(srcdir)/mixins/*
 renderer = bin/render-html.litcoffee
 
-.PHONY: all
+.PHONY: all clean
 
 all: node_modules bower_components index.html
 
@@ -25,3 +25,9 @@ index.html: $(semantics) $(data) $(mixins) $(layout) main.css $(renderer)
 
 main.css: $(style)
 	sass $< > $@
+
+clean:
+	rm --recursive --force -- node_modules
+	rm --recursive --force -- bower_components
+	rm --force -- main.css
+	rm --force -- index.html
