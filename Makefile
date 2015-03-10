@@ -2,7 +2,7 @@
 srcdir = src
 
 data = $(srcdir)/resume.yaml
-semantics = $(srcdir)/index.jade
+semantics = $(srcdir)/resume.jade
 layout = $(srcdir)/layout.jade
 mixins = $(srcdir)/mixins/*
 renderer = bin/render-html.litcoffee
