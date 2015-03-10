@@ -6,6 +6,7 @@
   ],
   "private": true,
   "dependencies": {
-      "bourbon": "~4.2.1"
+      "bourbon": "~4.2.1",
+      "neat": "~1.7.1"
   }
 }
