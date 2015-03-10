@@ -6,9 +6,11 @@ semantics = $(srcdir)/resume.jade
 layout = $(srcdir)/layout.jade
 style = $(srcdir)/resume.sass
 mixins = $(srcdir)/mixins/*
-renderer = bin/render-html.litcoffee
 
-.PHONY: all clean
+renderer = bin/render-html.litcoffee
+watcher = ./node_modules/.bin/watch
+
+.PHONY: all clean watch
 
 all: node_modules bower_components index.html
 
@@ -31,3 +33,6 @@ clean:
 	rm --recursive --force -- bower_components
 	rm --force -- main.css
 	rm --force -- index.html
+
+watch: node_modules
+	 $(watcher) '$(MAKE) all' src --wait=1
