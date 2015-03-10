@@ -7,7 +7,8 @@ email: roman@pitak.net
 work:
     -
         employer: Kindred group
-        when: 02/2012 – present
+        employerUrl: http://www.kindredgroup.com/
+        when: 02/2013 – present
         positions:
             -
                 position: Senior developer
@@ -29,7 +30,7 @@ work:
                     client library I wrote, cut the estimated email deployment times by 80%.
     -
         employer: Accenture Services
-        when: 03/2011 – 01/2012
+        when: 03/2011 – 01/2013
         position: Application Operation Specialist
         description: |
             I was responsible for running and maintaining an e-Billing application spread over multiple servers. The application
@@ -48,3 +49,46 @@ work:
         description: |
             I was responsible for identification, undertaking and solving problems in my range of competence and for remote
             technical support of operating systems and applications.
+
+tech:
+    advanced:
+        - CoffeeScript
+        - PHP 5
+        - shell (bash, ksh 88)
+        - Nette framework
+        - /regexp?/
+        - git
+        - sed
+        - awk
+        - SQL
+        - MVC
+    intermediate:
+        - AWS
+        - HTML
+        - JavaScript
+        - XML
+        - Magento
+    basic:
+        - Sass
+        - jQuery
+        - CSS
+        - Prolog
+        - C/C++
+        - Pascal
+        - Python
+        - LaTeX
+        - Haskell
+        - Oracle PL/SQL
+
+education:
+    - 2006 – 2009 Faculty of Mathematics and Physics, Charles University in Prague
+    - 2002 – 2006 Gymnázium Jozefa Gregora Tajovského, Banská Bystrica
+    - B1 English
+    - Higher B2, German
+    - Driving license B
+
+languages:
+    - English Fluent
+    - German Advanced
+    - Slovak Fluent / native speaker
+    - Czech Intermediate
