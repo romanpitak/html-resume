@@ -3,7 +3,7 @@
 mixin position(job)
     section
         header: h3=job.position
-        p= job.description
+        != markdown(job.description)
 
 //- Multiple positions for one job
 mixin positions(job)

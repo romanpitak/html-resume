@@ -3,7 +3,8 @@
     "author": "Roman Piták",
     "devDependencies": {
         "jade": "1.9.2",
-        "js-yaml": "3.2.7"
+        "js-yaml": "3.2.7",
+        "marked": "0.3.3"
     },
     "private": true
 }

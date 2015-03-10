@@ -4,6 +4,7 @@ srcdir = src
 data = $(srcdir)/resume.yaml
 semantics = $(srcdir)/index.jade
 mixins = $(srcdir)/mixins/*
+renderer = bin/render-html.litcoffee
 
 .PHONY: all
 
@@ -13,5 +14,5 @@ node_modules: package.json
 	npm install
 	@touch node_modules
 
-index.html: $(data) $(semantics) $(mixins)
-	coffee bin/render-html.litcoffee -- $(semantics) $(data) $@
+index.html: $(semantics) $(data) $(mixins) $(renderer)
+	coffee $(renderer) -- $(semantics) $(data) $@
