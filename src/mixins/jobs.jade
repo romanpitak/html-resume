@@ -1,0 +1,23 @@
+
+//- One position
+mixin position(job)
+    section
+        header: h3=job.position
+        p= job.description
+
+//- Multiple positions for one job
+mixin positions(job)
+    if job.positions
+        for position in job.positions
+            +position(position)
+    else
+        +position(job)
+
+//- Work experience
+mixin jobs(jobs)
+    each job in jobs
+        article.job
+            header
+                h3= job.employer
+                div= job.when
+            +positions(job)
