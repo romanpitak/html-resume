@@ -81,14 +81,37 @@ tech:
         - Oracle PL/SQL
 
 education:
-    - 2006 – 2009 Faculty of Mathematics and Physics, Charles University in Prague
-    - 2002 – 2006 Gymnázium Jozefa Gregora Tajovského, Banská Bystrica
+    -
+        when: 2006 – 2009
+        name: Faculty of Mathematics and Physics, Charles University in Prague
+    -
+        when: 2002 – 2006
+        name: Gymnázium Jozefa Gregora Tajovského, Banská Bystrica
     - B1 English
     - Higher B2, German
     - Driving license B
 
 languages:
-    - English Fluent
-    - German Advanced
-    - Slovak Fluent / native speaker
-    - Czech Intermediate
+    -
+        name: English
+        proficiency: Fluent
+    -
+        name: German
+        proficiency: Advanced
+    -
+        name: Slovak
+        proficiency: native speaker
+    -
+        name: Czech
+        proficiency: Intermediate
+
+interests: |
+    Hiking (Norway, Belarus), canoeing, woodcraft, handwork, guitar.
+
+    #### Robotics
+
+    In 2004 I built my first small robot for the Istrobot competition.
+    In 2007 I joined a team of 15 MFF UK students building a robot for the Eurobot 2008 contest.
+    In 2008 I became head of hardware department.
+    I coauthored one of the articles published about our robots
+    and attended the Eurobot 2009 conference in France.
