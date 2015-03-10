@@ -8,9 +8,10 @@ style = $(srcdir)/resume.sass
 mixins = $(srcdir)/mixins/*
 
 renderer = bin/render-html.litcoffee
+pdfrenderer = bin/render-pdf.litcoffee
 watcher = ./node_modules/.bin/watch
 
-.PHONY: all clean watch
+.PHONY: all clean watch pdf
 
 all: node_modules bower_components index.html
 
@@ -27,6 +28,11 @@ index.html: $(semantics) $(data) $(mixins) $(layout) main.css $(renderer)
 
 main.css: $(style)
 	sass $< > $@
+
+pdf: resume.pdf
+
+resume.pdf: index.html
+	coffee $(pdfrenderer) -- $< $@
 
 clean:
 	rm --recursive --force -- node_modules
