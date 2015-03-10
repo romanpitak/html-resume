@@ -1,0 +1,10 @@
+mixin education(education)
+    article.education
+        header: h2 Education, certificates, licenses
+        for item in education
+            if item.constructor === String
+                .timeframe!= '&nbsp;'
+                .content= item
+            else
+                .timeframe= item.when
+                .content= item.name

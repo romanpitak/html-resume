@@ -1,12 +1,17 @@
 extends ./layout.jade
 
+include ./mixins/contacts.jade
 include ./mixins/jobs.jade
+include ./mixins/tech.jade
+include ./mixins/interests.jade
+include ./mixins/education.jade
 
 block content
     h1= name
-    div.phone= phone
-    div.email: a(href="mailto:#{email}")= email
-    h2 Work experience
+    +contacts
     +jobs(work)
-    h2 Interests
-    != markdown(interests)
+    +tech(tech)
+    +education(education)
+    +interests(interests)
+
+

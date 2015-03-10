@@ -1,0 +1,7 @@
+mixin tech(tech)
+    article.tech
+        header: h2 Programming
+        each languages, level in tech
+            div.level= level
+            div.languages
+                = languages.join(', ')
