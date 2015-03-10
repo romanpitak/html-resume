@@ -2,5 +2,30 @@
 @import ../bower_components/neat/app/assets/stylesheets/neat
 @import ../bower_components/bitters/app/assets/stylesheets/base
 
-.container
+.outer-container
     @include outer-container
+
+.phone
+    @include span-columns(10)
+
+.email
+    @include span-columns(2)
+    @include omega
+
+h1, h2
+    text-align: center
+
+article.job
+    @include span-columns(12)
+    section
+        @include span-columns(12)
+    header
+        .timeframe
+            @include span-columns(2)
+        .employer
+            @include span-columns(6)
+            @include omega
+        .position
+            @include span-columns(12)
+    p
+        @include span-columns(12)
