@@ -10,6 +10,14 @@ mixin positions(job)
     else
         +position(job)
 
+mixin jobs(jobs)
+    each job in jobs
+        article.job
+            header
+                h3= job.employer
+                div= job.when
+            +positions(job)
+        
 doctype html
 html(lang="en")
     head
@@ -20,9 +28,4 @@ html(lang="en")
             h1= name
             div= phone
             div: a(href="mailto:#{email}")= email
-            each job in work
-                article.job
-                    header
-                        h3= job.employer
-                        div= job.when
-                    +positions(job)
+            +jobs(work)
