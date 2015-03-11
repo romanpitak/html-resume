@@ -4,19 +4,16 @@
 
     options =
         viewportSize:
-            width: 1440
-            height: 900
+            width: '210mm'
+            height: '290mm'
         paperSize:
             pageFormat: 'A4'
             margin:
-                top: '0.7cm'
-                left: '0.7cm'
-                right: '0.7cm'
-                bottom: '0.7cm'
-        footer:
-            height: '1cm',
-            contents: '{currentPage} / {pages}'
-        zoomFactor: 0.75
+                top: '0cm'
+                left: '0cm'
+                right: '0cm'
+                bottom: '0cm'
+        zoomFactor: 1
 
     pdf = new NodePDF process.argv[2], process.argv[3], options
     pdf.on 'error', console.error
