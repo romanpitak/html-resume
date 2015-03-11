@@ -1,9 +1,6 @@
-@import ../bower_components/bourbon/app/assets/stylesheets/bourbon
-@import ../bower_components/neat/app/assets/stylesheets/neat
-@import ../bower_components/bitters/app/assets/stylesheets/base
+@import mixins/reset
 
 .outer-container
-    @include outer-container
 
 h1
     font-size: 1.75em
@@ -23,11 +20,7 @@ a
     text-decoration: none
 
 article
-    @include span-columns(12)
     padding-bottom: 2em
-
-article, section, header
-    @include span-columns(12)
 
 @import mixins/contacts
 @import mixins/jobs

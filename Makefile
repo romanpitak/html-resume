@@ -13,14 +13,10 @@ watcher = ./node_modules/.bin/watch
 
 .PHONY: all clean watch pdf
 
-all: node_modules bower_components index.html
+all: node_modules index.html
 
 node_modules: package.json
 	npm install
-	@touch $@
-
-bower_components: bower.json
-	bower install
 	@touch $@
 
 index.html: $(semantics) $(data) $(mixins) $(layout) main.css $(renderer)
@@ -36,7 +32,6 @@ resume.pdf: index.html $(pdfrenderer)
 
 clean:
 	rm --recursive --force -- node_modules
-	rm --recursive --force -- bower_components
 	rm --force -- main.css
 	rm --force -- index.html
 
