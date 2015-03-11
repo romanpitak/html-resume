@@ -5,7 +5,8 @@ data = $(srcdir)/resume.yaml
 semantics = $(srcdir)/resume.jade
 layout = $(srcdir)/layout.jade
 style = $(srcdir)/resume.sass
-mixins = $(srcdir)/mixins/*
+jademixins = $(srcdir)/mixins/*.jade
+sassmixins = $(srcdir)/mixins/*.sass
 
 renderer = bin/render-html.litcoffee
 pdfrenderer = bin/render-pdf.litcoffee
@@ -19,10 +20,10 @@ node_modules: package.json
 	npm install
 	@touch $@
 
-index.html: $(semantics) $(data) $(mixins) $(layout) main.css $(renderer)
+index.html: $(semantics) $(data) $(jademixins) $(layout) main.css $(renderer)
 	coffee $(renderer) -- $(semantics) $(data) $@
 
-main.css: $(style)
+main.css: $(style) $(sassmixins)
 	sass $< > $@
 
 pdf: resume.pdf
@@ -36,4 +37,4 @@ clean:
 	rm --force -- index.html
 
 watch: node_modules
-	 $(watcher) '$(MAKE) all' src --wait=1
+	 $(watcher) '$(MAKE) all' src --wait=0
