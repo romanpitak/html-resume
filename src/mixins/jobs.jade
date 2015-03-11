@@ -19,6 +19,6 @@ mixin jobs(jobs)
     each job in jobs
         article.job
             header
-                .timeframe= job.when
-                .employer= job.employer
+                h4.timeframe= job.when
+                h4.employer= job.employer
             +positions(job)
