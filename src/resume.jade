@@ -7,11 +7,8 @@ include ./mixins/interests.jade
 include ./mixins/education.jade
 
 block content
-    h1= name
     +contacts
     +jobs(work)
     +tech(tech)
     +education(education)
     +interests(interests)
-
-

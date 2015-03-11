@@ -1,4 +1,6 @@
 mixin contacts
     article.contacts
-        div.phone= phone
-        div.email: a(href="mailto:#{email}")= email
+        header: h1= name
+        section
+            div.phone= phone
+            div.email: a(href="mailto:#{email}")= email
