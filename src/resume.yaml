@@ -13,7 +13,9 @@ work:
             -
                 position: Senior developer
                 description: |
-                    Literate CoffeeScript, AWS...
+                    I implemented a distributed data collection service using the AWS infrastructure.
+                    The servers are written in Literate CoffeeScript and the data is stored in a NoSQL database.
+                    I also maintained and altered running projects in PHP.
             -
                 position: PHP Programmer / System analyst
                 description: |
