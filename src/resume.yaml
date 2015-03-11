@@ -87,9 +87,7 @@ education:
     -
         when: 2002 – 2006
         name: Gymnázium Jozefa Gregora Tajovského, Banská Bystrica
-    - B1 English
-    - Higher B2, German
-    - Driving license B
+    - B1 English, Higher B2 German, Driving license B
 
 languages:
     -
