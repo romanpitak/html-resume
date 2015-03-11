@@ -31,7 +31,7 @@ main.css: $(style)
 
 pdf: resume.pdf
 
-resume.pdf: index.html
+resume.pdf: index.html $(pdfrenderer)
 	coffee $(pdfrenderer) -- $< $@
 
 clean:
