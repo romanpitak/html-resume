@@ -28,6 +28,7 @@ work:
                     While coding HTML newsletter emails, I~created a~“meta language” in~PHP based on the~HTML object~model.
                     This~allowed me to effortlessly create content and~locale variations of the~emails.
                     That, paired with the~dotMailer~API client library I~wrote, cut the~estimated email deployment times by~80%.
+                    The~library was later recognized by~dotMailer and~added to their list of community~projects. 
     -
         employer: Accenture Services
         when: 03/2011 – 01/2013
