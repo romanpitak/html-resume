@@ -19,7 +19,7 @@ If I want to add a `~` character, I can write `&#126;`.
     renderer.paragraph = (text) ->
         return paragraph text.replace /~/g, '&nbsp;'
 
-Override the `marked` function by a new one with the custom renderer. 
+Override the `marked` function by a new one with the custom renderer.
 
     marked = do (marked) ->
         return (text) ->
@@ -30,6 +30,7 @@ Override the `marked` function by a new one with the custom renderer.
 
     options = safeLoad readFileSync process.argv[3], 'utf8'
     options.markdown = marked
+    options.pretty = true
     html = renderFile process.argv[2], options
 
 ### Write the output
